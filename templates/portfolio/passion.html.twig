@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Eportfolio{% endblock %}
+
+{% block body %}
+
+<div class="container text-center">
+    <h1 class="mt-4">Mes passions</h1>
+
+    <div class="content-box">
+        <p class="titre-box">L'informatique</p>
+        <p class="text-box">Je suis passionné par l'informatique en général, surtout par le fonctionnement des ordinateurs, la programmation et la cybersécurité.</p>
+        <img src="/images/pc.png" alt="Illustration informatique" class="content-image">
+        <div class="button-wrapper">
+            <a href="https://www.root-me.org/" class="btn-custom">En savoir plus</a>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <p class="titre-box">Le football</p>
+        <p class="text-box">Je suis passionné par le football, sur l'actualité du football, les matchs et sur les jeux vidéos dans ce domaine comme Fifa.</p>
+        <img src="/images/foot.png" alt="Illustration football" class="content-image">
+        <div class="button-wrapper">
+            <a href="https://www.flashscore.fr/" class="btn-custom">En savoir plus</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Tavernier Noa - Tous droits réservés.</p>
+        <p>Mentions Légales</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5vw;
+            margin-top: 2rem;
+            color: #fff;
+            opacity: 0.9;
+        }
+
+        .titre-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 2rem;
+        }
+
+        .text-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+
+        .content-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-wrapper {
+            margin-top: 20px;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+{% endblock %}
