@@ -1,0 +1,129 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Eportfolio{% endblock %}
+
+{% block body %}
+<div class="page-container">
+    <div class="container text-center">
+        <h1 class="mt-4">Configurer les fonctions de base du réseau local (semestre 1)</h1>
+
+        <div class="content-box">
+            <p class="titre-box">Contexte</p>
+            <p class="text-box">L'objectif de cet apprentissage critique est d'apprendre aux étudiants à créer et configurer des réseaux LAN et VLAN sur des switch Cisco en réel ou en virtuel sur cisco packet tracer.</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Savoir mis en œuvre</p>
+            <p align="left" class="text-box">-Connaître les protocoles réseaux de base (IP, DHCP, DNS, etc)<br>-Savoir la fonction d'un switch, d'un routeur, d'une passerelle, d'une adresse IP<br>-Connaitre le principe du mode access et trunk</p><br>
+            <p class="titre-box">Savoir-faire mis en œuvre</p>
+            <p align="left" class="text-box">-Attribuer des adresses IP<br>-Brancher des postes et des switchs<br>-Savoir créer des Vlans et des LAN<br>-Configurer des switchs<br>-Faire les réglages dans les paramètres réseau<br>-Vérifier la connectivité</p><br>
+            <p class="titre-box">Savoir-être mis en œuvre</p>
+            <p align="left" class="text-box">-Travailler avec méthodes pour ne pas se perdre et éviter des erreurs<br>-Autonome pour pouvoir refaire toutes les manipulations seul de manière efficace<br>-Attentifs, car il faut être concentré quand on attribue les adresses IP ou quand on configure un switch<br>-Être réactifs car si on fait une erreur, il faut agir vite pour ne pas perdre de temps</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Tâche réalisée et les résultats</p>
+            <p class="text-box">Durant les séances de cours, j'ai pu réaliser de nombreux montages réseau LAN et VLAN sur Cisco Packet Tracer puis en réel.</p>
+            <img src="/images/1montage.png" alt="Illustration football" class="content-image"><br><br>
+            <img src="/images/2montage.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">Également, lors d'une SAE, j'ai pu réaliser ma propre topologie afin d'améliorer et de mettre à jour un réseau déjà existant, puis ensuite j'ai pu réaliser ma topologie en réel.</p>
+            <img src="/images/3montage.png" alt="Illustration football" class="content-image"><br><br>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Les problèmes rencontrés et les solutions</p>
+            <p class="text-box">J'ai eu beaucoup de mal pour comprendre la différence entre le mode access et le mode trunk et à quel moment les utiliser, pour résoudre ce problème j'ai fait beaucoup de simulations réseau chez moi puis j'ai regardé quelques vidéos. Également j'ai eu des problèmes pour mémoriser toutes les commandes de configuration, donc dans mon sac avec moi j'ai toujours une feuille avec toutes les commandes utiles</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Analyse Réflexive</p>
+            <p class="text-box">Avant d'intégrer la filière RT, je n'avais aucune connaissance sur la création de réseaux, les seules connaissances que j'avais c'était le fonctionnement des adresses IP, l'utilisation du binaire et de l'hexadécimale. Maintenant je sais réaliser des réseaux LAN et configurer des VLANS, puis la différence entre le mode Trunk et Access.</p>
+            <p class="text-box">Sur l'acquisition de l'apprentissage critique je me situerai à 3/4, car je ne peux toujours pas me passer à 100% de ma feuille de commandes.</p>
+        </div>
+       
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tavernier Noa - Tous droits réservés.</p>
+        <p>Mentions Légales</p>
+    </footer>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            margin: 50px auto 20px auto;
+            
+        }
+
+        h1 {
+            font-size: 5vw;
+            margin-top: 2rem;
+            color: #fff;
+            opacity: 0.9;
+        }
+
+        .titre-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 2rem;
+        }
+
+        .text-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+{% endblock %}

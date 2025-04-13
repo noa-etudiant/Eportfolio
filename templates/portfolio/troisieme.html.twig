@@ -1,0 +1,132 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Eportfolio{% endblock %}
+
+{% block body %}
+<div class="page-container">
+    <div class="container text-center">
+        <h1 class="mt-4">Utiliser un système informatique et ses outils</h1>
+
+        <div class="content-box">
+            <p class="titre-box">Contexte</p>
+            <p class="text-box">L'objectif de cet apprentissage critique est d'apprendre aux étudiants à utiliser des Arduino ou ESP32 avec le langage C afin de créer des petits programmes utiles au quotidien</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Savoir mis en œuvre</p>
+            <p align="left" class="text-box">-Savoir utiliser le langage C</p><br>
+            <p class="titre-box">Savoir-faire mis en œuvre</p>
+            <p align="left" class="text-box">-Connaitre les bases des branchements électroniques<br>-Savoir utiliser et comprendre une notice</p><br>
+            <p class="titre-box">Savoir-être mis en œuvre</p>
+            <p align="left" class="text-box">-Autonome pour pouvoir refaire toutes les manipulations seul de manière efficace<br>-Attentifs, car il faut être concentré lors des branchements et de la programmation<br>-Minutieux car on m'aniplue de petits composants<br></p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Tâche réalisée et les résultats</p>
+            <p class="text-box">Durant les séances de cours, J’ai appris à brancher et programmé un capteur de température DHT sur un arduino en C.</p>
+            <img src="/images/M1.png" alt="Illustration football" class="content-image"><br><br>
+            <img src="/images/M2.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">Ensuite j’ai relié tout ça sur un écran OLED pour afficher la température dessus.</p>
+            <img src="/images/M3.png" alt="Illustration football" class="content-image"><br><br>
+            <img src="/images/M4.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">Également en terminal j’avais relié un capteur de température à un site WEB avec Apache afin d’afficher la température sur un site WEB.</p>
+            <p class="text-box">Puis en terminal pour mon grand oral j’avais créé un piège à frelon électrique relié à un ESP32 programmé en micro python et à chaque décharge électrique une notification était envoyée sur mon téléphone et sa actualisait un compteur de frelon mort grâce à une application faite avec node red et mqtt.</p>
+            <img src="/images/M5.png" alt="Illustration football" class="content-image"><br><br>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Les problèmes rencontrés et les solutions</p>
+            <p class="text-box">Dans cet apprentissage critique, mon problème principal est que je ne maîtrisais et ne maîtrise toujours pas le langage C car je n'en avais jamais fait, j'ai toujours fait du Python ou du micropython sur des ESP32. Ainsi, je suis plus à l'aise en Python qu'en C, puis vu que ces deux langages se ressemblent, j'ai tendance à les mélanger. Pour m’améliorer, chez moi, j’ai un ESP32 et je me force à faire des petits programmes en C pour l’utiliser, mais je suis limité car je n’ai pas de capteur, moteur, servomoteur, etc.</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Analyse Réflexive</p>
+            <p class="text-box">Avant d'intégrer la filière RT, je possédais quelques connaissances en Python mais pas du tout en C. Dans cet apprentissage critique, on n'a utilisé que du C donc j'étais un peu perdu, mais en prenant mon temps et en m'aidant sur internet, j'ai pu réaliser le travail demandé.</p>
+            <p class="text-box">Sur l'acquisition de l'apprentissage critique, je me situerai à 3/4, car je pense que je peux toujours m'améliorer dans le langage C et de faire plus attention pour pas mélanger les deux langages</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tavernier Noa - Tous droits réservés.</p>
+        <p>Mentions Légales</p>
+    </footer>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            margin: 50px auto 20px auto;
+            
+        }
+
+        h1 {
+            font-size: 5vw;
+            margin-top: 2rem;
+            color: #fff;
+            opacity: 0.9;
+        }
+
+        .titre-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 2rem;
+        }
+
+        .text-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+{% endblock %}

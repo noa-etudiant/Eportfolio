@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Eportfolio{% endblock %}
+
+{% block body %}
+<div class="page-container">
+    <div class="container text-center">
+        <h1 class="mt-4">Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation (...)</h1>
+
+        <div class="content-box">
+            <p class="titre-box">Contexte</p>
+            <p class="text-box">L'objectif de cet apprentissage critique est d'apprendre aux étudiants à créer et configurer des machines virtuelles afin de savoir utiliser un système d'exploitation</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Savoir mis en œuvre</p>
+            <p align="left" class="text-box">-Savoir ce que s'est un système d'exploitation<br>-Savoir utiliser les commandes pour intéragir avec la machine (Linux)<br>-Savoir utiliser Virtual box ou Vmware</p><br>
+            <p class="titre-box">Savoir-faire mis en œuvre</p>
+            <p align="left" class="text-box">-Déployer une machine virtuelle<br>-Utiliser les commandes d'un terminal</p><br>
+            <p class="titre-box">Savoir-être mis en œuvre</p>
+            <p align="left" class="text-box">-Autonome pour pouvoir refaire toutes les manipulations seul de manière efficace<br>-Attentifs, car il faut être concentré lors de la création de la machine<br></p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Tâche réalisée et les résultats</p>
+            <p class="text-box">Durant les séances de cours, j'ai pu apprendre à déployer différentes machines comme Linux ou Windows et également à les utiliser</p>
+            <img src="/images/OS1.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">J'ai aussi appris à utiliser le terminal Linux avec toutes les commandes utiles</p>
+            <img src="/images/OS2.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">Par la suite sur Ubuntu j’ai appris à configurer et installer une communication entre un Ubuntu Client et un Ubuntu Serveur, donc configurer un serveur nfs puis également installer et configurer samba pour faire des échange de fichiers entre deux clients un Ubuntu et un Windows.</p>
+            <img src="/images/OS4.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">Également, en terminal STI2D SIN j’ai appris à installer à configurer Ubuntu sur une clef USB en mode pertinent (Live) avec Rufus..</p>
+            <img src="/images/OS3.png" alt="Illustration football" class="content-image"><br><br>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Les problèmes rencontrés et les solutions</p>
+            <p class="text-box">Dans cet apprentissage critique je n'ai pas rencontré de problèmes </p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Analyse Réflexive</p>
+            <p class="text-box">Avant d'intégrer la filière RT, je possédais beaucoup de connaissances sur Linux et ses commandes car mon ancien professeur d'informatique nous faisait travailler uniquement sur ce système d'exploitation. Actuellement j'ai pu enrichir mes connaissances car je ne maîtrisais pas l'installation d'une machine virtuelle.</p>
+            <p class="text-box">Sur l'acquisition de l'apprentissage critique, je me situerai à 4/4, car je pense ne pas avoir de difficulté à déployer une machine virtuelle et à réaliser certaines tâches sur Linux.</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tavernier Noa - Tous droits réservés.</p>
+        <p>Mentions Légales</p>
+    </footer>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            margin: 50px auto 20px auto;
+            
+        }
+
+        h1 {
+            font-size: 5vw;
+            margin-top: 2rem;
+            color: #fff;
+            opacity: 0.9;
+        }
+
+        .titre-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 2rem;
+        }
+
+        .text-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+{% endblock %}

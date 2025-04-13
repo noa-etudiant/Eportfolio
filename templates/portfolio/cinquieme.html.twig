@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Eportfolio{% endblock %}
+
+{% block body %}
+<div class="page-container">
+    <div class="container text-center">
+        <h1 class="mt-4">Comprendre l’architecture et les fondements des systèmes numériques (...)</h1>
+
+        <div class="content-box">
+            <p class="titre-box">Contexte</p>
+            <p class="text-box">L'objectif de cet apprentissage critique est d'apprendre aux étudiants comment certains systèmes numériques fonctionnent, par quel protocole et comment l'information est transmise.</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Savoir mis en œuvre</p>
+            <p align="left" class="text-box">-Les principes du codage de l’information<br>-Les principes de communication : protocoles (TCP/IP, HTTP, etc.), paquets, adresses IP, DNS<br>-La structure d’Internet (modèle OSI).</p><br>
+            <p class="titre-box">Savoir-faire mis en œuvre</p>
+            <p align="left" class="text-box">-Expliquer comment une donnée est codée, transmise<br>-Configurer ou simuler un échange de données entre machines</p><br>
+            <p class="titre-box">Savoir-être mis en œuvre</p>
+            <p align="left" class="text-box">-Rigueur car l’analyse peut être complexe pour certains protcoles<br>-Travailler avec méthodes pour ne pas se perdre et éviter des erreurs<br></p>
+        </div>
+         <div class="content-box">
+            <p class="titre-box">Tâche réalisée et les résultats</p>
+            <p class="text-box">Durant les séances de cours, J’ai appris le modèle OSI.</p>
+            <img src="/images/R1.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">Aussi, J'ai appris à utiliser le logiciel Wireshark pour sniffer le réseau et analyser des trames.</p>
+            <img src="/images/R2.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">J’ai aussi appris à analyser des trames de manière manuelle puis de savoir les différences entre les protcoles TCP et UDP.</p>
+            <img src="/images/R3.png" alt="Illustration football" class="content-image"><br><br>
+            <p class="text-box">Également, lors d'une SAE, j'ai pu appliquer tout ça car j'avais pour objectif d'analyser une trame afin de savoir un maximum d'informations sur celle-ci pour récupérer un fichier sur un serveur FTP.</p>
+            <img src="/images/R4.png" alt="Illustration football" class="content-image"><br><br>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Les problèmes rencontrés et les solutions</p>
+            <p class="text-box">Dans cet apprentissage critique, mon problème principal était de me souvenir de la méthode avec le nombre d'octets pour trouver l'emplacement des informations utiles dans la trame. Pour résoudre ce problème, j'ai appris par coeur le nombre d'octets qui sépare chaque information utile</p>
+        </div>
+        <div class="content-box">
+            <p class="titre-box">Analyse Réflexive</p>
+            <p class="text-box">Avant d'intégrer la filière RT, je ne possédais aucune connaissance concernant l'analyse des trames et le fonctionnement de certains protocoles. Ainsi, j'ai pu acquérir de nouvelles connaissances pour comprendre comment l'information est transmise.</p>
+            <p class="text-box">Sur l'acquisition de l'apprentissage critique, je me situerai à 3/4, car je pense que je pense avoir actuellement oublier certaines méthodes d'analyse.</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tavernier Noa - Tous droits réservés.</p>
+        <p>Mentions Légales</p>
+    </footer>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            margin: 50px auto 20px auto;
+            
+        }
+
+        h1 {
+            font-size: 5vw;
+            margin-top: 2rem;
+            color: #fff;
+            opacity: 0.9;
+        }
+
+        .titre-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 2rem;
+        }
+
+        .text-box {
+            color: #333;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+{% endblock %}
